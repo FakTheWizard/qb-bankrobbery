@@ -44,7 +44,7 @@ end
 --- @param message string
 --- @return nil
 function Config.OnPoliceAlert(message)
-    TriggerServerEvent("police:server:policeAlert", message)
+    exports['ps-dispatch']:FleecaBankRobbery(camId)
 end
 
 --- This is called when the user is nearby an interaction that requires said items, this will trigger the box that shows what items you need
